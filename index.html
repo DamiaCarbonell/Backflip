@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Vat</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- A -->
+    <div class="scene scene-START">
+      <video class="start-video" autoplay muted loop playsinline>
+        <source src="img/STARTSCREEN.mp4" type="video/mp4" />
+      </video>
+
+      <div class="start-overlay"></div>
+
+      <div class="start-content">
+        <h1 class="game-title">BACKFLIP</h1>
+
+        <div class="start-subtitle">PRESS 1 TO BEGIN</div>
+      </div>
+    </div>
+
+    <div class="scene scene-A" style="background-image: url(img/SCENE\ A.png)">
+      <div class="top-text">
+        You wake up in a vat of liquid inside a science looking room.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"HELLO?"</div>
+          <div>- Nothing responds, nothing happens.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"WHERE AM I?"</div>
+          <div>- You look around the room.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- You did a backflip, wow!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B -->
+
+    <div class="scene scene-B" style="background-image: url(img/SCENE\ B.png)">
+      <div class="top-text">
+        There’s little to do in this room. But some things might lay around.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>EXIT</div>
+          <div>- You open the door, you are now in a corridor.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>SEARCH FOR STUFF</div>
+          <div>- You decide to search the room.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- You did a backflip, wow!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C -->
+
+    <div class="scene scene-C" style="background-image: url(img/SCENE\ C.png)">
+      <div class="top-text">
+        There are two doors on opposite sides of the corridor, the corridor
+        stretches into darkness.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>CHECK THE DOORS</div>
+          <div>- You stay in the corridor.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>FOLLOW THE CORRIDOR</div>
+          <div>- You venture into the darkness.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- Corridor backflip, extra points.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- D -->
+
+    <div class="scene scene-D" style="background-image: url(img/SCENE\ D.png)">
+      <div class="top-text">
+        The vat and the drawer seem promising. They are also the only things in
+        here.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>CHECK THE VAT</div>
+          <div>- There is a note on the vat.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>CHECK THE DRAWER</div>
+          <div>- There is a flashlight inside the drawer, you take it.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- You did a backflip due to indecision.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOTE -->
+
+    <div class="scene scene-NOTE" style="background-image: url(img/NOTE.png)">
+      <div class="top-text">
+        Remember to set the timer to 3 days, not 3 HOURS, we don't want him
+        waking up when we are not around.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>GO BACK</div>
+          <div>- You stop reading the note.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>GO BACK</div>
+          <div>- You stop reading the note.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>GO BACK</div>
+          <div>- You stop reading the note.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ea -->
+
+    <div
+      class="scene scene-Ea"
+      style="background-image: url(img/SCENE\ Ea.png)"
+    >
+      <div class="top-text">You see nothing, if only you had a flashlight…</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>FEEL AROUND</div>
+          <div>- You feel a ladder and begin climbing down.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>WALK CONFIDENTLY</div>
+          <div>- You walk directly into death.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- You did a backflip in absolute darkness, WAHO!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GDEATH -->
+
+    <div
+      class="scene scene-GDEATH"
+      style="background-image: url(img/GDEATH.png)"
+    >
+      <div class="top-text">
+        You sadly slip and fall to your doom. It was very dark and your feet
+        don’t have lights.
+      </div>
+    </div>
+
+    <!-- Eb -->
+
+    <div
+      class="scene scene-Eb"
+      style="background-image: url(img/SCENE\ Eb.png)"
+    >
+      <div class="top-text">
+        You turn on the flashlight. Light has been made. A ladder descends into
+        the darkness.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>GO DOWN</div>
+          <div>- You descend carefully.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>DROP FLASHLIGHT</div>
+          <div>
+            - The flashlight falls and you can't see it reach the bottom.
+          </div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- It's easier to do it if you have a flashlight.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- F -->
+
+    <div class="scene scene-F" style="background-image: url(img/SCENE\ F.png)">
+      <div class="top-text">One door to the left and one to the right.</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>LEFT DOOR</div>
+          <div>- You enter the room.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>RIGHT DOOR</div>
+          <div>- You enter the room.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- Ni de derechas ni de izquierdas.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- G -->
+
+    <div class="scene scene-G" style="background-image: url(img/SCENE\ G.png)">
+      <div class="top-text">
+        The stairs never seem to end. You have been descending for over an hour.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>GO BACK</div>
+          <div>- You climb upward again.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>KEEP GOING</div>
+          <div>- You continue downward.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- YOU DID IT, WHAT THE FUCK HOW ARE YOU NOT DEAD.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- H -->
+
+    <div class="scene scene-H" style="background-image: url(img/SCENE\ H.png)">
+      <div class="top-text">You must decide what to do next.</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>TRY DOORS AGAIN</div>
+          <div>- You return to the doors.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>CONTINUE DOWN</div>
+          <div>- You continue descending.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- Yet another backflip.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- I -->
+
+    <div class="scene scene-I" style="background-image: url(img/SCENE\ I.png)">
+      <div class="top-text">A weird man stands in the middle of the room.</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"WHO ARE YOU?"</div>
+          <div>- He suddenly turns to face you.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>KNOCK HIM OUT</div>
+          <div>- You strike him with a conveniently placed crowbar.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- He doesn't seem to notice you, shame, it was so cool.</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="scene scene-IDEATH"
+      style="background-image: url(img/IDEATH.png)"
+    >
+      <div class="top-text">
+        Why did yoou do that? It was so rude of you to attack him. The guilt of
+        having murdered someone eats you alive, literally. You die. Next time,
+        do a backflip instead, it's nicer.
+      </div>
+    </div>
+
+    <!-- J -->
+
+    <div class="scene scene-J" style="background-image: url(img/SCENE\ J.png)">
+      <div class="top-text">
+        An empty room. Someone clearly gave up designing this area.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>STAY</div>
+          <div>- Why?</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>LEAVE</div>
+          <div>- Fair enough.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- Perfect spot to practice.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- K -->
+
+    <div class="scene scene-K" style="background-image: url(img/SCENE\ K.png)">
+      <div class="top-text">
+        It seemed too dangerous to continue descending.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>GO BACK</div>
+          <div>- You return to the doors.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>DESCEND AGAIN</div>
+          <div>- You continue downward.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- That was your best one so far!.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- L -->
+
+    <div class="scene scene-L" style="background-image: url(img/SCENE\ L.png)">
+      <div class="top-text">
+        After hours, you finally reach the bottom. Thousands of vats stretch
+        endlessly through the enormous laboratory.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>LOOK AT A VAT</div>
+          <div>- You approach one of the vats.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"HELLO?"</div>
+          <div>- You call out into the laboratory.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>
+            - You did a backflip, it echoes through the lab. WOW... WOw...
+            Wow...wow...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- M -->
+
+    <div class="scene scene-M" style="background-image: url(img/SCENE\ M.png)">
+      <div class="top-text">
+        IT’S YOU. Someone identical to you floats inside the vat.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>OPEN IT</div>
+          <div>- You open the vat.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"HELLO?"</div>
+          <div>- Maybe someone can explain this.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- You did your classic backflip, such a classic.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOPEN -->
+
+    <div
+      class="scene scene-OPENENDING"
+      style="background-image: url(img/OPENENDING.png)"
+    >
+      <div class="top-text">
+        Suddenly you are no longer where you were. You are inside the vat you
+        just opened, waking up, and there is another YOU on the floor,
+        motionless. DEAD. Was that the original you? The sight makes you pass
+        out.
+      </div>
+    </div>
+
+    <!-- N -->
+
+    <div class="scene scene-N" style="background-image: url(img/SCENE\ N.png)">
+      <div class="top-text">
+        A man appears from behind one of the vats.
+        <br /><br />
+        “Oh! You woke up early. Sorry about that, the timer probably failed
+        again.”
+        <br /><br />
+        “Can I offer you something to drink?”
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"WHAT IS THIS PLACE?"</div>
+          <div>- The man sighs heavily.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"WHO AM I?"</div>
+          <div>- The man suddenly looks uncomfortable.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- The man is genuinely impressed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- O -->
+
+    <div class="scene scene-O" style="background-image: url(img/SCENE\ O.png)">
+      <div class="top-text">
+        “This place was built to copy one consciousness into many bodies, to
+        create an artificial hive mind of some sorts.”
+        <br /><br />
+        “But it never worked properly. Every time a second body wakes up, the
+        previous one dies.”
+        <br /><br />
+        “You are not the first you. You are just the current one.”
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"SO I DIED?"</div>
+          <div>- The man hesitates.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"CAN THIS STOP?"</div>
+          <div>- He looks toward the control systems.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- The man is genuinely impressed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q -->
+
+    <div class="scene scene-Q" style="background-image: url(img/SCENE\ Q.png)">
+      <div class="top-text">
+        “You are you. At least, you remember being you.”
+        <br /><br />
+        “Every time the transfer succeeds, the newest body wakes up with the
+        same consciousness.”
+        <br /><br />
+        “The previous body always dies.”
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"SO I DIED?"</div>
+          <div>- The man hesitates.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"CAN THIS STOP?"</div>
+          <div>- He looks toward the machinery.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- The man is genuinely impressed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- P -->
+
+    <div class="scene scene-P" style="background-image: url(img/SCENE\ P.png)">
+      <div class="top-text">
+        “Technically? Yes.”
+        <br /><br />
+        “Every time a new body wakes up, the previous one shuts down.”
+        <br /><br />
+        “Memory survives. Personality survives. The consciousness continues.”
+        <br /><br />
+        “But the body doesn't.”
+        <br /><br />
+        “After enough iterations, neither me or my partner were sure if that
+        still counted as surviving.”
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"HOW MANY TIMES?"</div>
+          <div>- The man looks toward the endless rows of vats.</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"STOP THE MACHINE"</div>
+          <div>- The man studies you carefully.</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"BACKFLIP"</div>
+          <div>- You perform a deeply existential backflip. DAMN.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BAD ENDING -->
+
+    <div
+      class="scene scene-BADENDING"
+      style="background-image: url(img/BADENDING.png)"
+    >
+      <div class="top-text">
+        “You have been replaced thousands of times,” the man says.
+        <br /><br />
+        “Maybe more. Doesn't matter now.”
+        <br /><br />
+        You were replaced again and again. And as the man leaves you there, you
+        will continue to wake up in here each time you either die outside the
+        lab or every time they wake up another you. There is no point in
+        escaping if you are trapped in this cycle forever.
+      </div>
+    </div>
+
+    <!-- GOOD ENDING -->
+
+    <div
+      class="scene scene-GOODENDING"
+      style="background-image: url(img/GOODENDING.png)"
+    >
+      <div class="top-text">
+        The man leads you to the control panel. And points to a big red switch.
+        <br /><br />
+        "One switch can stop every future transfer. But remember that this time
+        a death will be final, no other you will wake up."
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"Pull the Switch"</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"Don't pull the switch"</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="scene scene-GOODENDINGFINAL"
+      style="background-image: url(img/GOODENDING.png)"
+    >
+      <div class="top-text">
+        You pull the switch.
+        <br /><br />
+        The vats go dark.
+        <br /><br />
+        You leave the lab as the last YOU.
+      </div>
+    </div>
+
+    <!-- SECRET ENDING -->
+
+    <div
+      class="scene scene-SECRETENDING"
+      style="background-image: url(img/SECRETENDING.png)"
+    >
+      <div class="top-text">
+        The man stares at you.
+        <br /><br />
+        “Impossible.”
+        <br /><br />
+        “No clone has ever performed a backflip under the preassure of an
+        existential conundrum.”
+        <br /><br />
+        He opens the exit door.
+        <br /><br />
+        You backflip into freedom.
+      </div>
+    </div>
+
+    <!-- DEATH -->
+
+    <div class="scene scene-DEATH" style="background-image: url(img/DEATH.jpg)">
+      <div class="top-text">YOU DIED</div>
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"Wake up?"</div>
+          <div>How?</div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"Wake up?"</div>
+          <div>How?</div>
+        </div>
+
+        <div class="choice">
+          <div>3.</div>
+          <div>"Wake up?</div>
+          <div>How?</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END SCREEN -->
+
+    <div
+      class="scene scene-OPENENDSCREEN"
+      style="background-image: url(img/ENDSCREEN.png)"
+    >
+      <div class="top-text">YOU REACHED THE OPENED ENDING</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="scene scene-GOODENDSCREEN"
+      style="background-image: url(img/ENDSCREEN.png)"
+    >
+      <div class="top-text">YOU REACHED THE GOOD ENDING</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BAD ENDING SCREEN -->
+
+    <div
+      class="scene scene-BADENDSCREEN"
+      style="background-image: url(img/ENDSCREEN.png)"
+    >
+      <div class="top-text">YOU REACHED THE BAD ENDING</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECRET ENDING SCREEN -->
+
+    <div
+      class="scene scene-SECRETENDSCREEN"
+      style="background-image: url(img/ENDSCREEN.png)"
+    >
+      <div class="top-text">YOU REACHED THE SECRET ENDING</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ETERNITY ENDING SCREEN -->
+
+    <div
+      class="scene scene-ETERNITYENDSCREEN"
+      style="background-image: url(img/ENDSCREEN.png)"
+    >
+      <div class="top-text">YOU REACHED THE ETERNITY ENDING</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FREEDOM ENDING SCREEN -->
+
+    <div
+      class="scene scene-FREEDOMENDSCREEN"
+      style="background-image: url(img/ENDSCREEN.png)"
+    >
+      <div class="top-text">YOU REACHED THE FREEDOM ENDING</div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>PLAY AGAIN</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FREEDOM ENDING -->
+
+    <div
+      class="scene scene-FREEDOMENDING"
+      style="background-image: url(img/FREEDOM.png)"
+    >
+      >
+      <div class="top-text">
+        "Isso é a coisa mais incrível que eu já vi! Você está livre para ir
+        embora!" He says.
+        <br /><br />
+        You leave the facility through the exit door.
+      </div>
+    </div>
+
+    <!-- ETERNITY ENDING -->
+
+    <div
+      class="scene scene-ETERNITYENDING"
+      style="background-image: url(img/ETERNITY.png)"
+    >
+      <div class="top-text">
+        He grabs a conveniently placed crowbar and knocks you out.
+        <br /><br />
+        You are placed back in the vat, and you remain there for all eternity.
+      </div>
+    </div>
+
+    <!-- PORTUGUESE XAT -->
+
+    <div
+      class="scene scene-PORTUGUESEXAT"
+      style="background-image: url(img/PORTUGUESEXAT.png)"
+    >
+      <div class="top-text">
+        "Seu filho da puta, como você saiu da banheira? Volte para lá agora
+        mesmo." The man says.
+      </div>
+
+      <div class="choices">
+        <div class="choice">
+          <div>1.</div>
+          <div>"WHAT?"</div>
+          <div>
+            - He grabs a conveniently placed crowbar and knocks you out.
+          </div>
+        </div>
+
+        <div class="choice">
+          <div>2.</div>
+          <div>"BACKFLIP"</div>
+          <div>- The man is amazed by your backflip!</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/simplewebserial.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

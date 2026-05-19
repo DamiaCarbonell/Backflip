@@ -1,0 +1,375 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  font-family: monospace;
+  background-color: black;
+}
+
+.scene {
+  display: none;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.scene.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.top-text,
+.choice {
+  color: white;
+
+  text-shadow:
+    -2px -2px 0 #000000,
+    2px -2px 0 #000000,
+    -2px 2px 0 #000000,
+    2px 2px 0 #000000;
+}
+
+.top-text {
+  position: absolute;
+
+  top: 60px;
+  left: 60px;
+
+  width: 70%;
+  max-width: 1000px;
+
+  text-align: left;
+
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.choices {
+  position: absolute;
+
+  bottom: 60px;
+  left: 60px;
+  right: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 40px;
+}
+
+.choice {
+  flex: 1;
+
+  font-size: 24px;
+  text-align: center;
+
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.choice:hover {
+  opacity: 1;
+}
+
+.choice div:first-child {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.choice div:nth-child(2) {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.consequence-text {
+  position: absolute;
+
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 80%;
+  max-width: 900px;
+
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.4;
+
+  color: white;
+
+  text-shadow:
+    -2px -2px 0 #000000,
+    2px -2px 0 #000000,
+    -2px 2px 0 #000000,
+    2px 2px 0 #000000;
+}
+
+.choice div:nth-child(3) {
+  display: none;
+}
+
+.scene-DEATH .top-text {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+
+  font-size: 80px;
+  letter-spacing: 10px;
+}
+
+/*shit -------------------------------------------------------------------------+/
+
+/* OLD COMPUTER / CRT EFFECT */
+
+body {
+  background: #0b0f0b;
+  color: #b7d3b0;
+
+  /* overall screen feeling */
+  filter: contrast(1.1) brightness(0.95) saturate(0.8);
+
+  font-family: "Courier New", monospace;
+
+  overflow: hidden;
+}
+
+/* Scanlines */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+
+  pointer-events: none;
+  z-index: 9999;
+
+  mix-blend-mode: soft-light;
+}
+
+/* Vignette + subtle glow */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at center,
+    transparent 55%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+
+  pointer-events: none;
+  z-index: 9998;
+
+  box-shadow: inset 0 0 80px rgba(0, 255, 120, 0.08);
+}
+
+/* Slight flicker animation */
+@keyframes flicker {
+  0% {
+    opacity: 0.98;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.99;
+  }
+}
+
+body {
+  animation: flicker 0.12s infinite;
+}
+
+.scene {
+  filter: blur(0.3px);
+  text-shadow: 0 0 3px rgba(180, 255, 180, 0.2);
+}
+.scene-START {
+  position: relative;
+  overflow: hidden;
+  background: black;
+}
+
+.start-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.scene-START {
+  position: relative;
+  overflow: hidden;
+  background: black;
+}
+
+/* VIDEO */
+
+.start-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: 0.45;
+
+  filter: brightness(0.45) contrast(1.2) blur(1px);
+
+  z-index: 0;
+}
+
+/* CRT OVERLAY */
+
+.start-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+
+  z-index: 1;
+}
+
+/* CONTENT */
+
+.start-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(-5%);
+
+  text-align: center;
+}
+
+/* TITLE */
+
+.game-title {
+  font-size: clamp(5rem, 12vw, 10rem);
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  letter-spacing: 0.12em;
+
+  color: #d8ffe1;
+
+  margin: 0;
+
+  text-shadow:
+    0 0 10px rgba(120, 255, 120, 0.25),
+    0 0 30px rgba(120, 255, 120, 0.15);
+
+  animation: flicker 3s infinite;
+}
+
+/* SUBTITLE */
+
+.start-subtitle {
+  margin-top: 1.5rem;
+
+  font-size: 1rem;
+
+  letter-spacing: 0.4em;
+
+  color: rgba(220, 255, 220, 0.8);
+
+  font-family: "Courier New", monospace;
+
+  animation: pulse 2s infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.96;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.98;
+  }
+}
+
+.blackout-transition {
+  position: fixed;
+  inset: 0;
+
+  background: black;
+
+  z-index: 999999;
+
+  opacity: 0;
+
+  transition: opacity 1.5s ease;
+}
+
+.blackout-transition.visible {
+  opacity: 1;
+}
+
+.blackout-transition.fade-out {
+  opacity: 0;
+}
